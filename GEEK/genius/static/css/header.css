@@ -1,0 +1,9 @@
+.bare_menu{
+    margin-left: 500px;
+    font-size: 22px;
+}
+.bare_menu a{
+    color: #73c421;
+    font-weight:bold;
+    font-size-adjust: inherit;
+}

@@ -1,0 +1,84 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{% static "images/geekicone.png" %}">
+
+    <title> Genius Geek Groups </title>
+
+    {% include "layouts/_liencss.html" %}
+
+</head>
+<body>
+
+        {% include "layouts/_header.html" %}
+        {% include "layouts/_barehead1.html" %}
+        <br>
+        <br>
+
+    {% block content %}
+        <main role="main">
+
+          <!-- Main jumbotron for a primary marketing message or call to action -->
+            {% include "layouts/_slides.html" %}
+{#            <div class="jumbotron" style="; padding-bottom: 250px; background-image: url({% static "images/slids/GGG3.jpg" %}) ">#}
+            <div class="container">
+              <h1 class="display-3">  </h1>
+                <br>
+              <p></p>
+{#              <p><a class="btn btn-success btn-lg"style="background-color: #73c421"  href="#" role="button">Suivant &raquo;</a></p>#}
+            </div>
+            <br>
+          <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+              <div class="col-md-3">
+                <h2>Intelligence Artificielle | <p class="fa fa-terminal"></p> </h2>
+                <p style="font-size: 17px">Les technologies offertes par l'intelligence artificielle sont à votre portée! Nos systèmes intelligents vous accompagnent dans les différents domaines de votre vie. </p>
+                <br>
+                <br>
+                  <p><a class="btn btn-success" style="background-color: #73c421" href="{% url 'inteligence_artificiel' %}" role="button">details &raquo;</a></p>
+              </div>
+              <div class="col-md-3">
+                <h2>Développement Web | <p class="fa fa-html5"></p> </h2>
+                <p style="font-size: 17px">Offrez vous le site web parfait pour votre activité. Nos solutions web sont adaptées à toutes les plateformes. Marquez la différence ! </p>
+                    <br>
+                    <br>
+                    <br>
+                  <p><a class="btn btn-success" style="background-color: #73c421" href="{% url 'developpement_web' %}" role="button">details &raquo;</a></p>
+              </div>
+              <div class="col-md-3">
+                <h2>Dévéloppement Mobile | <p class="fa fa-android"></p> </h2>
+                <p style="font-size: 17px"> Nous concevons, designons et promouvons des applications qui créent réellement de la valeur. Nous créons des applications pour tous vos besoins, pour toutes les plateformes. Dites nous votre soucis, nous vous créons une appli ! </p>
+                <p><a class="btn btn-success" style="background-color: #73c421" href="{% url 'developpement_mobil' %}" role="button">details &raquo;</a></p>
+              </div>
+              <div class="col-md-3">
+                <h2>Automatisation des Tâches | <p class="fa fa-magic"></p> </h2>
+                <p style="font-size: 17px">Dans un monde qui évolue aussi vite que le notre, il est important de savoir gagner du temps! Automatisez vos tâches quotidiennes grâces à nos solutions innovantes. </p>
+                <br>
+                <br>
+                  <p style="font-size: 17px"><a class="btn btn-success" style="background-color: #73c421" href="{% url 'automatisation_taches' %}" role="button">details &raquo;</a></p>
+              </div>
+            </div>
+
+            <hr>
+
+          </div> <!-- /container -->
+
+    </main>
+    {% endblock %}
+        <br>
+        <br>
+    {% include "layouts/_footer.html" %}
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    {% include "layouts/_lienjs.html" %}
+  </body>
+</html>

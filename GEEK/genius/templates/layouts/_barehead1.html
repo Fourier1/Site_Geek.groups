@@ -1,0 +1,40 @@
+<div class="bare_menu navbar-expand-md position-fixed bg-white" style="margin-left: 300px; font-size: 25px">
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link fa fa-home" href="{% url 'home' %}"> Accueil</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fa fa-television" href="{% url 'presentation' %}"> Presentation</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fa fa-envelope-open" href="{% url 'portefeuil' %}"> Portefeuille</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fa fa-tasks" data-toggle="dropdown" href="#" role="button"
+               aria-haspopup="true"
+               aria-expanded="false"> Compétences</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item fa fa-terminal" href="{% url 'inteligence_artificiel' %}"> | Intelligence
+                    Artificielle</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item fa fa-html5" href="{% url 'developpement_web' %}"> | Développement Web</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item fa fa-android" href="{% url 'developpement_mobil' %}"> | Dévéloppement
+                    Mobile</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item fa fa-magic" href="{% url 'automatisation_taches' %}"> | Automatisation des
+                    Tâches </a>
+                {#              <div class="dropdown-divider"></div>#}
+                {#              <a class="dropdown-item" href="#">Separated link</a>#}
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fa fa-envelope-o" href="{% url 'contact' %}"> Contacts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fa fa-tags" href="{% url 'projet' %}"> Projets</a>
+        </li>
+    </ul>
+
+</div>

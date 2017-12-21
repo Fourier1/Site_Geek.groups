@@ -1,0 +1,61 @@
+{% load staticfiles %}
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="icon" href="{% static "images/geekicone.png" %}">
+
+    <title> Genius Geek Groups </title>
+
+   {% include 'layouts/_liencss.html' %}
+
+
+{% include "layouts/_header.html" %}
+{#<br>#}
+{% include "layouts/_barehead1.html" %}
+<br>
+<br>
+<br>
+<br>
+    <h2 style="text-align: center; color: #73c421"> GENIUS GEEK GROUP </h2>
+            <br>
+            <br>
+            <br>
+    <div class="container">
+            <div class="row">
+                    <div class="col-md-6">
+                    <br>
+                <div class="w3-container">
+                  <div class="w3-card" style="width:150%; margin-left: -200px; margin-bottom: -10px">
+                    <img src="{% static 'images/present.jpg' %}" alt="Person" style="width:100%">
+                    <div class="w3-container">
+                    </div>
+                  </div>
+                  <br>
+
+                </div>
+
+                </div>
+
+                    <div class="col-md-6" style="margin-left: 620px; margin-top: -420px; padding-left: -25px">
+                        <p style="font-size: 35px; color: #1e7e34; font-style: italic; font-weight:bold;">
+                            Qui Sommes-nous :
+                        </p>
+
+                        <p style=" font-size: 20px; color: #2b2b2b; font-weight: lighter;">
+                                Vous voulez réussir votre transformation numérique? Vous voulez être plus proche de vos clients?
+                            Vous cherchez les bons outils et la technologie adaptée à votre business?
+                            <br><br>Avoir une forte présence sur Internet aujourd'hui est une exigence pour les entreprises afin de mieux se connecter avec leurs clients, de renforcer la présence en ligne de leur marque et d'obtenir de nouvelles pistes.
+                            Genius Geek Group vous aide à obtenir les bons outils numériques
+                            pour atteindre ces objectifs.<br><br>
+                            Nous transformerons vos désirs en technologies! Contactez-nous ici !
+                        </p>
+
+                    </div>
+                            <br>
+                            <br>
+                            <br>
+                </div>
+
+    </div>
+{% include "layouts/_footer.html" %}
+
+{% include "layouts/_lienjs.html" %}
